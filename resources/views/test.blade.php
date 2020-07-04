@@ -4,12 +4,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-8 col-md-8">
-                <h5>SECTION 1</h5>
+                <h2>SECTION 1</h2>
                 <div class="row">
-                    <section class="col-12 row">
                     @foreach ($allPosts as $post)
                         @if( $post->section == 'section1')
-                        <div class="col-3 big-box">
+                        <div class="col-3">
                             <div class="card">
                                 <a href="{{route('details',$post->id)}}">
                                     @if( $post->is_video == '0')
@@ -17,7 +16,7 @@
                                     @else
                                     <div class="media">
                                         <div class="media-body">
-                                            <iframe width="188" height="136" src="https://www.youtube.com/embed/{{ $post->video }}" frameborder="0" allowfullscreen>
+                                            <iframe width="195" height="195" src="https://www.youtube.com/embed/{{ $post->video }}" frameborder="0" allowfullscreen>
                                             </iframe>
                                         </div>
                                     </div>
@@ -31,19 +30,16 @@
                                 </div>
                             </div>
                         </div>
-
                         @endif
                     @endforeach
-                    </section>
                 </div>
             </div>
-
             <div class="col-sm-4 col-md-4 border-left">
-                <h5>SECTION 2</h5>
+                <h2>SECTION 2</h2>
                 <div class="row">
                     @foreach ($allPosts as $post)
                         @if( $post->section == 'section2')
-                        <div class="col-6">
+                        <div class="col-4">
                             <div class="card">
                                 <a href="{{route('details',$post->id)}}">
                                     @if( $post->is_video == '0')
@@ -51,7 +47,7 @@
                                     @else
                                     <div class="media">
                                         <div class="media-body">
-                                            <iframe width="195" height="145" src="https://www.youtube.com/embed/{{ $post->video }}" frameborder="0" allowfullscreen>
+                                            <iframe width="30" height="30" src="https://www.youtube.com/embed/{{ $post->video }}" frameborder="0" allowfullscreen>
                                             </iframe>
                                         </div>
                                     </div>

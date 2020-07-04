@@ -18,7 +18,7 @@ class CreatePostsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('title')->unique();
             $table->string('brief');
-            $table->string('body');
+            $table->longText('body');
             $table->unsignedBigInteger('is_video');
             $table->string('video')->nullable();
             $table->string('image')->nullable();

@@ -34,22 +34,12 @@
 
 					<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 						<li>
-							<a href="#">
-								<i class="ace-icon fa fa-user"></i>
-								Profile
+                            <a href="{{route('homepage')}}">
+								<i class="ace-icon fa fa-home"></i>
+								View Site
 							</a>
 						</li>
                         <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <i class="ace-icon fa fa-key"></i>
-                                Change Password
-                            </a>
-                        </li>
-
-						<li class="divider"></li>
-
-
                         <li>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

@@ -27,7 +27,8 @@ class DetailsController extends Controller
             'brief' => 'required',
             'body' => 'required',
             'section' => 'required',
-            'image' => 'image|nullable|max:1999'
+            'image' => 'image|nullable'
+            // 'image' => 'image|nullable|max:1999'
         ]);
 
 
